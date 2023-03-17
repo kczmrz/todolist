@@ -1,23 +1,22 @@
 import './index.css';
 import ToDoList from './Components/ToDoList';
-import Footer from './Components/footer'; 
-import Navbar from './Components/navbar';
+import { Footer, Navbar } from './Components';
 
 
 function App() {
   return (
-   
-    <div className="flex flex-col h-screen justify-between overflow-x-hidden">
+   <div className="flex flex-col h-screen justify-between overflow-x-hidden">
       <nav><Navbar/></nav>
 
       <main className="mb-auto"> 
         <ToDoList/>
       </main>
-      <br/>
-   <footer>
-    <Footer/>
-   </footer>
 
+      <br/>
+
+      <footer>
+         <Footer/>
+      </footer>
    </div>
   );
 }
